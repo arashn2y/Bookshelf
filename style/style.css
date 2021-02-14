@@ -149,9 +149,11 @@ section {
 }
 
 section#home {
-  background-image: url('/img/lewis-keegan-oB2aEeE8s4A-unsplash.jpg');
+  background-image: url('../img/lewis-keegan-oB2aEeE8s4A-unsplash.jpg');
   background-size: cover;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center left;
 }
 
 section#home a {
