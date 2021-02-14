@@ -56,10 +56,6 @@ nav ul {
   list-style: none;
 }
 
-/* h2 {
-  font-size: 20px;
-} */
-
 nav li a {
   font-size: 2.5vh;
   text-decoration: none;
@@ -173,21 +169,24 @@ section#contact {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
+@media screen and (min-width: 100px) {
 
-@media screen and (max-width:810px) {
+  .nav {
+    display: none;
+  }
   .overlay {
     position: fixed;
     top: 0;
     right: 0;
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     transform: translateX(0vw);
   }
 
   .overlay-slide-right {
-    transition: all 0.3s ease-in-out;
-    transform: translateX(+15vw);
+    transition: all 0.8s ease-in-out;
+    transform: translateX(+20vw);
   }
 
   .overlay-slide-left {
@@ -195,9 +194,17 @@ section#contact {
     transform: translateX(0vw);
   }
 
+  h2 {
+    font-size: 15px;
+  }
+
+  .bar1, .bar2,
+  .bar3 {
+    width: 10vw;
+  }
   .menu-bars {
     top: 5vh;
-    right: 5.5vh;
+    right: 5vw;
   }
 
   .menu-bars {
@@ -228,6 +235,7 @@ section#contact {
   }
 
   nav li a {
+    font-size: 2vw;
     position: relative;
     top: 45%;
     text-transform: uppercase;
@@ -260,3 +268,86 @@ section#contact {
     transform: scale(1);
   }
 }
+
+@media screen and (min-width: 425px) {
+ h2 {
+   font-size: 20px;
+ }
+
+ .bar1, .bar2,
+  .bar3 {
+    width: 5vw;
+  }
+  .menu-bars {
+    top: 5vh;
+    right: 7.5vw;
+  }
+}
+
+@media screen and (min-width: 566px) {
+  .overlay {
+    width: 130px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+ 
+  .bar1, .bar2,
+   .bar3 {
+     width: 30px;
+   }
+   .menu-bars {
+     top: 5vh;
+     right: 50px;
+   }
+   nav li a {
+    font-size: 15px;
+   }
+ }
+
+ @media screen and (min-width: 1000px) {
+   h2 {
+     margin: 0;
+   }
+  .menu-bars {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+
+  .nav {
+    display: inline-block;
+  }
+  div,
+  div ul {
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    /* padding-right: 20px; */
+  }
+  
+  div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  div li a {
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 4px;
+    display: block;
+    text-align: center;
+    padding-right: 15px;
+  }
+  
+  div li a:hover {
+    transform: scale(1.15);
+  }
+  
+ }
