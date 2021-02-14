@@ -248,6 +248,9 @@ section#contact {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center left;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
   }
 
   .home {
