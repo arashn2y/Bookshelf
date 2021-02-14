@@ -99,7 +99,6 @@ nav li a:hover {
 .menu-bars {
   position: fixed;
   display: none;
-  top: 7vh;
   right: 2rem;
   z-index: 10;
   cursor: pointer;
@@ -203,7 +202,6 @@ section#contact {
     width: 10vw;
   }
   .menu-bars {
-    top: 5vh;
     right: 5vw;
   }
 
@@ -244,6 +242,14 @@ section#contact {
     padding: 0;
   }
 
+  section#home {
+    background-image: url("https://images.unsplash.com/photo-1588912914017-923900a34710?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1392&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center left;
+  }
+
   .home {
     background: var(--navColor1);
   }
@@ -279,7 +285,6 @@ section#contact {
     width: 5vw;
   }
   .menu-bars {
-    top: 5vh;
     right: 7.5vw;
   }
 }
@@ -288,17 +293,11 @@ section#contact {
   .overlay {
     width: 130px;
   }
-  
-  h2 {
-    font-size: 30px;
-  }
- 
   .bar1, .bar2,
    .bar3 {
      width: 30px;
    }
    .menu-bars {
-     top: 5vh;
      right: 50px;
    }
    nav li a {
@@ -307,9 +306,7 @@ section#contact {
  }
 
  @media screen and (min-width: 1000px) {
-   h2 {
-     margin: 0;
-   }
+
   .menu-bars {
     display: none;
   }
