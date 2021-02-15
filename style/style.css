@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 :root {
   --primaryColor: #fff;
@@ -10,6 +12,8 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -29,6 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
   z-index: 1;
 }
 
@@ -64,7 +69,7 @@ nav,
 nav ul {
   align-items: center;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 nav ul {
@@ -77,6 +82,7 @@ nav ul {
   justify-content: space-between;
   list-style: none;
 }
+
 div li a,
 nav li a {
   font-size: 3vh;
@@ -181,12 +187,77 @@ section#home {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .home {
   background: var(--navColor1);
 }
 
+p {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.name {
+  font-size: 5rem;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 20px;
+}
+
+.icon {
+  margin-top: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-twitter,.fa-facebook,.fa-instagram,.fa-linkedin,.fa-youtube {
+  font-size: 25px;
+}
+
+.fa-twitter:hover {
+  color: 	#1DA1F2;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: #4267B2;
+  cursor: pointer;
+}
+.fa-instagram:hover {
+  color: #D6274D;
+  cursor: pointer;
+}
+.fa-linkedin:hover {
+  color:  #0e76a8;
+  cursor: pointer;
+}
+.fa-youtube:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
 .about,
 section#about {
   background-color: var(--navColor2);
@@ -220,13 +291,68 @@ section#contact {
   .menu-bars {
     display: inline;
   }
+  p {
+    font-size: 15px;
+  }
+  
+  .name {
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 20px;
+  }
+
+  .icon {
+    padding: 10px 15px;
+    width: 150px;
+  }
+
+  .fa-twitter,.fa-facebook,.fa-instagram,.fa-linkedin,.fa-youtube {
+    font-size: 15px;
+  }
 }
 
+@media screen and (min-width: 600px) {
+  p {
+    width: 75%;
+    font-size: 17px;
+  }
+
+  .name {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  p {
+    width: 700px;
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .icon {
+    padding: 10px 20px;
+    width: 200px;
+  }
+
+  .fa-twitter,.fa-facebook,.fa-instagram,.fa-linkedin,.fa-youtube {
+    font-size: 20px;
+  }
+}
 
 @media screen and (min-width: 1000px) {
+
+  p {
+    width: 800px;
+    font-size: 25px;
+  }
+
   h1 {
     font-size: 1.5em;
   }
+
   .menu-bars {
     display: none;
   }
