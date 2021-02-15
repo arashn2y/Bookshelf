@@ -40,34 +40,64 @@ body {
 }
 
 /* nav Menu Items */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(-100vh);
+}
+
+.overlay-slide-up {
+  transition: all 0.7s ease-in-out;
+  transform: translateY(0vh);
+}
+
+.overlay-slide-down {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-100vh);
+}
+
 nav,
 nav ul {
   align-items: center;
-  height: 10vh;
   margin: 0;
-  padding: 0;
-  /* padding-right: 20px; */
+  padding: 0; 
 }
 
 nav ul {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  height: 85vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
 }
-
+div li a,
 nav li a {
-  font-size: 2.5vh;
+  font-size: 3vh;
+  position: relative;
+  top: 45%;
+  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   letter-spacing: 4px;
   display: block;
   text-align: center;
-  padding-right: 15px;
 }
 
-nav li a:hover {
-  transform: scale(1.15);
+nav ul li {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+}
+
+div li a:hover {
+  transform: scale(1.2);
 }
 
 .line::after {
@@ -99,7 +129,7 @@ nav li a:hover {
 .menu-bars {
   position: fixed;
   display: none;
-  right: 2rem;
+  right: 5vw;
   z-index: 10;
   cursor: pointer;
 }
@@ -153,164 +183,50 @@ section#home {
   background-size: cover;
 }
 
+.home {
+  background: var(--navColor1);
+}
+
+.about,
 section#about {
   background-color: var(--navColor2);
 }
 
+.skills,
 section#skills {
   background-color: var(--navColor3);
 }
 
+.projects,
 section#projects {
   background-color: var(--navColor4);
 }
 
+.contact,
 section#contact {
   background-color: var(--navColor5);
 }
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (min-width: 100px) {
-
   .nav {
     display: none;
   }
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 20vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    transform: translateX(0vw);
-  }
-
-  .overlay-slide-right {
-    transition: all 0.8s ease-in-out;
-    transform: translateX(+20vw);
-  }
-
-  .overlay-slide-left {
-    transition: all 0.4s ease-in-out;
-    transform: translateX(0vw);
-  }
-
-  h2 {
-    font-size: 15px;
-  }
-
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 10vw;
-  }
-
-  .menu-bars {
-    right: 5vw;
+  h1 {
+    font-size: 1em;
   }
 
   .menu-bars {
     display: inline;
   }
-
-  nav {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul {
-    position: absolute;
-    top: 15vh;
-    width: 100%;
-    height: 85vh;
-    padding-right: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-  }
-
-  nav ul li {
-    width: 100%;
-    height: 20%;
-    overflow: hidden;
-  }
-
-  nav li a {
-    font-size: 2vw;
-    position: relative;
-    top: 45%;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
-    padding: 0;
-  }
-
-  .home {
-    background: var(--navColor1);
-  }
-
-  .about {
-    background: var(--navColor2);
-  }
-
-  .skills {
-    background: var(--navColor3);
-  }
-
-  .projects {
-    background: var(--navColor4);
-  }
-
-  .contact {
-    background: var(--navColor5);
-  }
-
-  nav li a:hover {
-    transform: scale(1);
-  }
 }
 
-@media screen and (min-width: 425px) {
-  h2 {
-    font-size: 20px;
-  }
-
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 5vw;
-  }
-
-  .menu-bars {
-    right: 7.5vw;
-  }
-}
-
-@media screen and (min-width: 566px) {
-  .overlay {
-    width: 130px;
-    transform: translateX(+130px);
-  }
-
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 30px;
-  }
-
-  .menu-bars {
-    right: 50px;
-  }
-
-  nav li a {
-    font-size: 15px;
-  }
-}
 
 @media screen and (min-width: 1000px) {
-
+  h1 {
+    font-size: 1.5em;
+  }
   .menu-bars {
     display: none;
   }
@@ -323,15 +239,6 @@ section#contact {
     display: inline-block;
   }
 
-  div,
-  div ul {
-    align-items: center;
-    height: 10vh;
-    margin: 0;
-    padding: 0;
-    /* padding-right: 20px; */
-  }
-
   div ul {
     display: flex;
     flex-direction: row;
@@ -340,17 +247,8 @@ section#contact {
   }
 
   div li a {
-    font-size: 2.5vh;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 4px;
-    display: block;
-    text-align: center;
-    padding-right: 15px;
+    font-size: 1.1em;
+    position: static;
+    padding-right: 25px;
   }
-
-  div li a:hover {
-    transform: scale(1.15);
-  }
-
 }
