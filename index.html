@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1">
-  <title>Shilan Nouri</title>
-  <!-- Font Awsome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <title>Bookshelf Store</title>
+  <!-- Font Awesome (Social Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
   <!-- StyleSheets -->
   <link rel="stylesheet" href="style/style.css">
 </head>
@@ -16,29 +18,25 @@
   <header id="header" class="header">
     <!-- title of the site -->
     <div id="title" class="title">
-      <h1>SHILAN NOURI <br>ENGLISH TEACHER</h1>
+      <h1>BOOKSHELF \\\ STORE</h1>
     </div>
     <!-- Navigation bar for the devices with the screen size greater than 1000 -->
-    <div class="nav">
+    <nav>
       <ul>
         <li><a href="#home" class="active">HOME</a></li>
         <li><a href="#about" class="line">ABOUT</a></li>
-        <li><a href="#skills" class="line">SKILLS</a></li>
-        <li><a href="#projects" class="line">PROJECTS</a></li>
+        <li><a href="#books" class="line">books</a></li>
         <li><a href="#contact" class="line">CONTACT</a></li>
       </ul>
-    </div>
+    </nav>
     <!-- Navigation bar for smart phones and devices with the small screen -->
-    <div class="overlay overlay-slide-down" id="overlay">
-      <nav>
-        <ul>
-          <li id="nav-1" class="home"><a href="#home" class="active">HOME</a></li>
-          <li id="nav-2" class="about"><a href="#about" class="line">ABOUT</a></li>
-          <li id="nav-3" class="skills"><a href="#skills" class="line">SKILLS</a></li>
-          <li id="nav-4" class="projects"><a href="#projects" class="line">PROJECTS</a></li>
-          <li id="nav-5" class="contact"><a href="#contact" class="line">CONTACT</a></li>
-        </ul>
-      </nav>
+    <div class="overlay overlay-slide-up" id="overlay">
+      <ul>
+        <li id="nav-1" class="home"><a href="#home" class="active">HOME</a></li>
+        <li id="nav-2" class="about"><a href="#about" class="line">ABOUT</a></li>
+        <li id="nav-3" class="books"><a href="#books" class="line">BOOKS</a></li>
+        <li id="nav-5" class="contact"><a href="#contact" class="line">CONTACT</a></li>
+      </ul>
     </div>
     <!-- Menu bar -->
     <div class="menu-bars" id="menuBar">
@@ -48,36 +46,122 @@
     </div>
   </header>
   <!-- Sections -->
+  <!-- HOME section -->
   <section id="home">
     <div class="layer">
-      <p>
-        Hi This is <br>
-        <span class="name">SHILAN NOURI</span><br>
-        A CELTA certified English teacher holding two master’s degrees in
-        ELT and Linguistics with 10 years’ teaching experience
-        with a wide range of ages and nationalities either in person or online.
-      </p>
-      <div class="icon">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-youtube"></i>
+      <p>Welcome to your <span>BOOkSHELF</span> store</p>
+    </div>
+  </section>
+  <!-- ABOUT section -->
+  <section id="about">
+    <div class="aboutUs">
+      <h1>BOOKSHELF</h1>
+      <h4>Bookshelf store is an online bookstore with a mission to sell all books' categories.
+        We believe that easy accessing to books is essential to our society.As more and more people buy their books online, we wanted to create an easy, convenient way for you to get your books and support bookstores at the same time.</h4>
+    </div>
+  </section>
+  <!-- Float image for backGround -->
+  <section class="float">
+    <div class="layer">
+    <p>What are you wating for? just clcik and buy your favorite <span>BOOKS</span><br> here!</p>
+    </div>
+  </section>
+  <!-- Books section -->
+  <section id="books">
+    <h1>Books</h1>
+    <hr>
+    <h4>Buy your favorite books just by a click</h4>
+    <div class="bookshelf" id="bookshelf">
+      <div class="book">
+        <img src="https://www.barringtonstoke.co.uk/wp-content/uploads/2020/12/9781781129692.jpg" alt="Anima Farm">
+        <div class="container">
+          <h4><b>Animal Farm</b></h4>
+          <h5>George Orvell</h5>
+        </div>
+        <button class="buy" id="buy">Buy</button>
+      </div>
+      <div class="book">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/When_Nietzsche_Wept.jpg/250px-When_Nietzsche_Wept.jpg"
+          alt="When Nietzsche Wept">
+        <div class="container">
+          <h4>When Nietzsche Wept</h4>
+          <h5>Irvin D. Yalom</h5>
+        </div>
+        <button class="buy" id="buy">Buy</button>
+      </div>
+      <div class="book">
+        <img
+          src="https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg"
+          alt="To Kill a Mockingbird">
+        <div class="container">
+          <h4>To  Kill a Mockingbird</h4>
+          <h5>Harper Lee</h5>
+        </div>
+        <button class="buy" id="buy">Buy</button>
+      </div>
+      <div class="book">
+        <img
+          src="https://cdn.lifehack.org/wp-content/uploads/2015/03/Hobbit_book.jpg"
+          alt="Hobbit">
+        <div class="container">
+          <h4>Hobbit</h4>
+          <h5>J.R.R Tolkien</h5>
+        </div>
+        <button class="buy" id="buy">Buy</button>
       </div>
     </div>
   </section>
-  <section id="about">
-    <h1>Learn More About Me</h1>
+    <!-- Float image for backGround -->
+    <section class="float">
+      <div class="layer">
+      <p>we are waiting for you! just come and visit <br><span>bookshelf</span> <br> store</p>
+      </div>
+    </section>
+  <!-- CONTACT section -->
+  <section id="contact" class="contact">
+    <h1>Get in Touch</h1>
+    <hr>
+    <div class="contactUs">
+      <!-- Form structures -->
+      <form action="" method="post">
+        <div class="input">
+          <input type="text" id="name" placeholder="name">
+          <input type="email" id="email" placeholder="email">
+        </div>
+        <textarea name="message" id="message"></textarea>
+        <button class="send" type="submit">send</button>
+      </form>
+      <div class="address">
+        <!-- Address -->
+        <address>
+          <h1>You can found us here:</h1>
+          <hr> <br>
+          The Company Name. <br>
+          9870 St Vincent Place, <br>
+          Glasgow, DC 45 Fr 45. <br>
+          Telephone: +1 999 999 9999 <br>
+          FAX: +1 888 888 8888 <br>
+          E-mail: mail@example.org
+        </address>
+      </div>
+    </div>
+    <!-- Social medias -->
+    <div class="icon">
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+    </div>
   </section>
-  <section id="skills">
-    <h1>These Are My Strengths</h1>
-  </section>
-  <section id="projects">
-    <h1>These Are My Results</h1>
-  </section>
-  <section id="contact">
-    <h1>Available Anytime</h1>
-  </section>
+  <!-- Footer -->
+  <footer class="fotter" id="footer">
+    © 2021
+    Website designed by Arash Nouri
+  </footer>
+  <video playsinline autoplay muted loop>
+    <source src="film/Library - 846.mp4" type="video/webm">
+  </video>
   <!-- Script -->
   <script src="js/script.js"></script>
 </body>
