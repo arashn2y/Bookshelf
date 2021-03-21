@@ -206,15 +206,34 @@ span {
 }
 
 /* About Section */
-section#about,
+section#about {
+  height: 70vh;
+  background-color: rgba(170, 62, 57, 0.7);
+}
 .about {
   background-color: var(--navColor2);
 }
 
+.aboutUs span {
+  position: relative;
+  bottom: 6vh;
+  left: -6vw;
+  writing-mode: vertical-rl;
+  transform: rotate(245deg);
+  font-size: 2rem;
+}
+
+.aboutUs h4 {
+  position: relative;
+  bottom: 100px;
+}
 
 .aboutUs {
   width: 70%;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: justify;
 }
 
@@ -223,16 +242,21 @@ section#about,
   height: 50vh;
 }
 
+.float p {
+  width: 450px;
+}
 
 /* Books Section */
 section#books {
+  background-color: rgba(35, 98, 103, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-section#books,
+/* section#books, */
+
 .books {
   background-color: var(--navColor4);
 }
@@ -241,62 +265,83 @@ section#books,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   height: 80%;
 }
 
 .book {
   margin-top: 10px;
-  width: 23%;
+  width: 21%;
   height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   transition: 0.3s;
   border-radius: 5px;
 }
 
+
 img {
-  width: 80%;
+  width: 100%;
   height: 70%;
+  border-radius: 6px 6px 0 0;
 }
 
 .book:hover {
-  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.6);
 }
 
 .container {
+  font-size: 14px;
+  height: 20%;
   text-align: center;
-  padding: 2px 16px;
+  padding: 5px 16px;
+}
+
+.container h5 {
+  margin-top: 10px;
+  font-style: italic;
 }
 
 .buy {
   border: none;
-  background-color: rgba(255, 255, 255, 1);
   border-radius: 3px;
-  color: #000;
+  color: var(--navColor4);
+  width: 100%;
   font-size: 20px;
   padding: 5px 10px;
   cursor: pointer;
 }
 
-.buy:focus {
+.more:focus, .buy:focus {
   outline: none;
 }
 
-.buy:hover {
-  background: var(--navColor4);
+.more:hover, .buy:hover {
   border: none;
+  background: var(--navColor4);
   color: white;
+}
+
+.more {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  color: var(--navColor4);
+  width: 30%;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 /* Contact Section */
 section#contact {
+  background-color: rgba(44, 132, 55, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--navColor5);
 }
 
 .contact {
@@ -376,7 +421,7 @@ textarea:focus {
 }
 
 .send:hover {
-  background: var(--navColor5);
+  background: rgba(44, 132, 55, 0.7);
   border: none;
   color: white;
 }
@@ -448,7 +493,7 @@ video {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 100px) {
 
   /* nav */
   nav {
@@ -486,6 +531,16 @@ video {
     text-align: justify;
   }
 
+  .aboutUs span {
+    bottom: 20px;
+    left: 10px;
+    font-size: 2vh;
+  }
+
+  .aboutUs h4 {
+    bottom: 6vh;
+  }
+
   /* Float Section */
   .float {
     height: 30vh;
@@ -508,12 +563,12 @@ video {
 
   .book {
     width: 40%;
-    height: 45%;
+    height: 35%;
   }
 
   img {
     width: 100%;
-    height: 70%;
+    height: 58%;
   }
 
   .container {
@@ -521,10 +576,27 @@ video {
     text-align: center;
   }
 
+  .container h3 {
+    font-size: 10px;
+  }
+
+  .container h5 {
+    margin-top: 3px;
+    font-size: 7px;
+    font-style: italic;
+  }
+
   .buy {
     margin-top: 7px;
     font-size: 10px;
     padding: 4px 10px;
+  }
+
+  .more {
+    margin-bottom: 50px;
+    width: 35%;
+    font-size: 11px;
+    padding: 5px 10px;
   }
 
   /* Contact Section */
@@ -575,7 +647,7 @@ video {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 500px) {
 
   /* Header */
   h1 {
@@ -611,9 +683,58 @@ video {
     height: 20px;
   }
 
+  /* about us section */
+  .aboutUs span {
+    bottom: 20px;
+    left: 10px;
+    font-size: 2vh;
+  }
+
+  .aboutUs h4 {
+    bottom: 6vh;
+    font-size: 2vw;
+  }
+  /* Books Section */
+  section#books {
+    height: 150vw;
+    font-size: 2vw;
+  }
+
+  .bookshelf {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .book {
+    height: 40%;
+  }
+
+  img {
+    height: 70%;
+  }
+
+  .container h3 {
+    font-size: 12px;
+  }
+
+  .container h5 {
+    margin-top: 3px;
+    font-size: 8px;
+  }
+
+  .buy {
+    font-size: 13px;
+  }
+
+  .more {
+    margin-bottom: 30px;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
 
   /* Home Section */
   p {
