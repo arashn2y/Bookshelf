@@ -1,11 +1,9 @@
+/* MAIN */
 * {
   scroll-behavior: smooth;
 }
 
-body {
-  margin-top: 85px;
-}
-
+/* NAVBAR */
 .navbar {
   box-shadow: 2px 2px 5px #3292a6;
   opacity: 0.9;
@@ -13,17 +11,18 @@ body {
 }
 
 .navbar .nav-item {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-right: 20px;
 }
 
-#showcase {
+/* HOME */
+#home {
   position: relative;
-  min-height: 600px;
+  height: 100vh;
 }
 
-#showcase .primary-overlay {
-  background: rgba(50, 146, 166, 0.6);
+#home .primary-overlay {
+  background: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 0;
   left: 0;
@@ -31,12 +30,14 @@ body {
   height: 100%;
 }
 
+/* ABOUT and BOOKS */
 .info-header {
   width: 50%;
   margin: auto;
   border-bottom: 1px #ddd solid;
 }
 
+/* BOOKS */
 #books .card:hover {
   background: #8bdcec;
   color: #fff;
@@ -46,6 +47,7 @@ body {
   color: #fff;
 }
 
+/* VIDEO */
 video {
   object-fit: cover;
   z-index: -1;

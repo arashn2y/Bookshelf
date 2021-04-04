@@ -17,12 +17,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<source id="home">
+<body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="img/bookshelf.png" width="60" height="60" alt="">
-        <h3 class="d-inline align-middle">BOOKSHELF</h3>
+        <img src="img/bookshelf.png" width="60" height="60" alt="bookshelf">
+        <h4 class="d-inline align-middle">BOOKSHELF</h4>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span
           class="navbar-toggler-icon"></span></button>
@@ -45,16 +46,17 @@
     </div>
   </nav>
 
-  <!-- SHOWCASE -->
-  <section id="showcase" class="py-5">
-    <div class="primary-overlay text-white">
+  <!-- HOME -->
+  <section id="home" class="py-5">
+    <div class="primary-overlay text-white d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h1 class="mt-5 pt-5">
+            <h1>
               Welcome to <span class="text-light bg-info rounded px-3">BOOKSHELF</span> Store...
             </h1>
-            <h4 class="text-light my-5">We are here to help you to find and buy your favorite books easily and fast just by a click!</h4>
+            <h4 class="text-light my-5">We are here to help you to find and buy your favorite books quickly and conveniently only
+              with one click!</h4>
             <a href="#about" class="btn btn-outline-success btn-lg text-white">
               <i class="fa fa-arrow-right"></i> Read More</a>
           </div>
@@ -63,55 +65,58 @@
     </div>
   </section>
 
-  <!-- ABOUT / WHY SECTION -->
-    <section id="about" class="py-5 bg-light">
-      <div class="container text-center">
-        <div class="row mt-5">
-          <div class="col">
-            <div class="info-header mb-5 text-center">
-              <h1 class="text-primary pb-3 text-center">
-                Why <span class="bg-primary text-light rounded p-1">BOOKSHELF</span> store?
-              </h1>
-              <p class="lead pb-3">Because of three main reasons...</p>
+  <!-- ABOUT  -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <div class="row mt-5">
+        <div class="col">
+          <div class="info-header mb-5 text-center">
+            <h1 class="text-primary pb-3 text-center">
+              Why <span class="bg-primary text-light rounded p-1">BOOKSHELF</span> store?
+            </h1>
+            <p class="lead pb-3">For three main reason. it is...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h3 class="text-primary">Easier</h3>
+              <p class="text-muted">
+                With just one click, you can buy your favourite books. Choose, click, complete and finish your order.
+                Then,
+                you just only need to wait to receive your orders.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <h3>Smarter</h3>
+              <p>
+                We will help you to choose more efficiently, with huge resources like readers comments, book summary, reviews and rating, etc...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h3 class="text-primary">Faster</h3>
+              <p class="text-muted">After completing your orders, in less than 2 hours, you will receive your orders and you
+                can enjoy them while you are drinking your cup of tea...</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card text-center border-primary">
-              <div class="card-body">
-                <h3 class="text-primary">Easier</h3>
-                <p class="text-muted">
-                  Just with a click, you can buy your favourite books. Choose, click, complete your order and finish. Then, you just should wait to receive your orders.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card text-center bg-primary text-white">
-              <div class="card-body">
-                <h3>Smarter</h3>
-                <p>
-                  We will help you to choose easier and faster, with huge resources like readers comments, summary of books, books' reviews and rates and ...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card text-center border-primary">
-              <div class="card-body">
-                <h3 class="text-primary">Faster</h3>
-                <p class="text-muted">After completing your orders, less than 2 hours, you will receive your order and you can enjoy them while you are drinking a cup of tea...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-  <!-- AUTHORS -->
+  <!-- BOOKS -->
   <section id="books" class="py-5 text-center bg-white">
     <div class="container">
       <div class="row">
@@ -121,7 +126,8 @@
               <span class="bg-primary text-light rounded p-1">Books</span>
             </h1>
             <p class="lead pb-3">
-              There are some of our top-rated books that you can buy. for more books just search the name of the book or click on the more book buttons to have great choices.
+              These are some of our top-rated books that you can buy. for more books, just search the name of the book or
+              click on the 'more books' buttons to have great choices.
             </p>
           </div>
         </div>
@@ -134,7 +140,9 @@
               <h3>Animal Farm</h3>
               <h5 class="text-muted">George Orwell</h5>
               <p class="text-justify">
-                Animal farm was published in England on 17 August 1945. The book tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy. Ultimately, however...
+                Animal farm was published in England on 17 August 1945. The book tells the story of a group of farm
+                animals who rebel against their human farmer, hoping to create a society where the animals can be equal,
+                free, and happy. Ultimately, however...
               </p>
             </div>
             <div class="card-footer p-0 bg-transparent">
@@ -149,7 +157,10 @@
               <h3>When Nietzsche Wept</h3>
               <h5 class="text-muted"> Irvin D. Yalom</h5>
               <p class="text-justify">
-                When Nietzsche wept was published in 1992 and takes place mostly in Vienna, Austria, in the year 1882. It relates a fictional meeting between the doctor Josef Breuer and the philosopher Friedrich Nietzsche. The novel is a review of the history of philosophy and ...
+                When Nietzsche wept was published in 1992 and takes place mostly in Vienna, Austria, in the year 1882.
+                It
+                relates a fictional meeting between the doctor Josef Breuer and the philosopher Friedrich Nietzsche. The
+                novel is a review of the history of philosophy and ...
               </p>
             </div>
             <div class="card-footer p-0 bg-transparent">
@@ -163,7 +174,9 @@
               <img src="img/To-Kill-a-Mockingbird.jpg" alt="" class="w-75 mb-3">
               <h3>To Kill a Mockingbird</h3>
               <h5 class="text-muted">Harper Lee</h5>
-              <p class="text-justify">To Kill a Mockingbird was published in 1960 and became an immediate classic of literature. The novel examines racism in the American South through the innocent wide eyes of a clever young girl named Jean Louise (“Scout”) Finch...</p>
+              <p class="text-justify">To Kill a Mockingbird was published in 1960 and became an immediate classic of
+                literature. The novel examines racism in the American South through the innocent wide eyes of a clever
+                young girl named Jean Louise (“Scout”) Finch...</p>
             </div>
             <div class="card-footer p-0 bg-transparent">
               <button class="w-100 btn btn-success">Buy</button>
@@ -177,7 +190,11 @@
               <h3>The Spinoza Problem</h3>
               <h5 class="text-muted">Irvin D. Yalom</h5>
               <p class="text-justify">
-                The Spinoza problem was published in 2012 and it tells the story of the seventeenth-century thinker Baruch Spinoza, whose philosophy led to his own excommunication from the Jewish community, alongside that of the rise and fall of the Nazi ideologue Alfred Rosenberg, ...
+                The Spinoza problem was published in 2012 and it tells the story of the seventeenth-century thinker
+                Baruch
+                Spinoza, whose philosophy led to his own excommunication from the Jewish community, alongside that of
+                the
+                rise and fall of the Nazi ideologue Alfred Rosenberg, ...
               </p>
             </div>
             <div class="card-footer p-0 bg-transparent">
@@ -198,21 +215,21 @@
 
   <!-- CONTACT -->
   <section id="contact" class="bg-light py-5">
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h3>Get In Touch</h3>
-          <p class="lead">Anything to say?<br> We are waiting for your comments, reviews, Recommendations, ...</p>
+          <p class="lead">Anything to say?<br> We are eagerly waiting for your comments, reviews and Recommendations.</p>
           <form>
             <div class="form-group">
               <div class="input-group input-group-lg">
-                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
                 <input type="text" class="form-control" placeholder="Name">
               </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
-                <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
                 <input type="email" class="form-control" placeholder="Email">
               </div>
             </div>
@@ -229,13 +246,16 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer id="main-footer" class="py-5 bg-info text-white">
     <div class="container">
       <div class="d-flex justify-content-center mb-1">
-          <p class="lead">Designed By Arash Nouri</p>
+        <p class="lead">Designed By Arash Nouri</p>
       </div>
     </div>
   </footer>
+
+  <!-- HOME BACKGROUND VIDEO -->
   <video autoplay muted loop>
     <source src="./img/Library - 846.mp4" type="video/webm">
   </video>
